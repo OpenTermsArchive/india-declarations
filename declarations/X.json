@@ -1,0 +1,233 @@
+{
+  "name": "X",
+  "terms": {
+    "Terms of Service": {
+      "fetch": "https://x.com/tos",
+      "remove": [
+        ".twtr-icon--base",
+        ".p05-chapter-navigation",
+        "[style='display: none;']",
+        ".twtr-overlay__icon",
+        ".p21-hidden-content",
+        ".ct01__background",
+        ".ct17__background",
+        ".b04__image",
+        ".twtr-hidden--lg"
+      ],
+      "select": [
+        "main[id=twtr-main]"
+      ]
+    },
+    "Privacy Policy": {
+      "fetch": "https://x.com/hi/privacy",
+      "remove": [
+        ".twtr-icon--base",
+        ".p05-chapter-navigation",
+        "[style='display: none;']",
+        ".twtr-overlay__icon",
+        ".p21-hidden-content",
+        ".ct01__background",
+        ".ct17__background",
+        ".b04__image",
+        ".twtr-hidden--lg"
+      ],
+      "select": [
+        "main[id=twtr-main]"
+      ]
+    },
+    "Copyright Claims Policy": {
+      "fetch": "https://help.x.com/hi/rules-and-policies/copyright-policy",
+      "select": [
+        ".ct01__wrapper"
+      ],
+      "remove": [
+        ".b24__wrapper",
+        ".inherit",
+        ".twtr-type--roman-100r",
+        ".u11__breadcrumbs-list:nth-child(2)",
+        ".IconButton",
+        ".b04-image"
+      ],
+      "filter": [
+        "useXHelpCenterBaseURL"
+      ],
+      "executeClientScripts": true
+    },
+    "Law Enforcement Guidelines": {
+      "fetch": "https://help.x.com/hi/rules-and-policies/twitter-law-enforcement-support",
+      "select": [
+        ".aem-Grid"
+      ],
+      "remove": [
+        ".twtr-type--roman-100r",
+        ".u11__breadcrumbs-list:nth-child(2)",
+        ".twtr-type--headline-md",
+        ".b24__wrapper",
+        ".b17",
+        ".u11__mobile-header",
+        ".twtr-component--first > .b02-v2 > ul",
+        ".twtr-component--first b"
+      ],
+      "filter": [
+        "useXHelpCenterBaseURL"
+      ],
+      "executeClientScripts": true
+    },
+    "Trackers Policy": {
+      "fetch": "https://help.x.com/hi/rules-and-policies/twitter-cookies",
+      "select": [
+        ".aem-Grid"
+      ],
+      "remove": [
+        ".u11__breadcrumbs-mobile-modal",
+        ".twtr-type--roman-100r",
+        ".twtr-type--headline-md",
+        ".b24__wrapper",
+        ".b17"
+      ],
+      "filter": [
+        "useXHelpCenterBaseURL"
+      ],
+      "executeClientScripts": true
+    },
+    "Data Processor Agreement": {
+      "fetch": "https://help.x.com/hi/rules-and-policies/data-processing-legal-bases",
+      "select": [
+        ".aem-Grid"
+      ],
+      "remove": [
+        ".u11__breadcrumbs-mobile-modal",
+        ".twtr-type--roman-100r",
+        ".twtr-type--headline-md",
+        ".b24__wrapper",
+        ".b17"
+      ],
+      "filter": [
+        "useXHelpCenterBaseURL"
+      ],
+      "executeClientScripts": true
+    },
+    "Community Guidelines": {
+      "select": [
+        {
+          "startBefore": "h1",
+          "endAfter": "[class*=\"rich-text-v\"]"
+        }
+      ],
+      "filter": [
+        "useXHelpCenterBaseURL"
+      ],
+      "combine": [
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-rules"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/violent-content",
+          "select": [
+            "main"
+          ]
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/violent-entities"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/child-safety",
+          "select": [
+            "main"
+          ]
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/abusive-behavior"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/hateful-conduct-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/perpetrators-of-violent-attacks"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/glorifying-self-harm"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/adult-content",
+          "select": [
+            "main"
+          ]
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/personal-information"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/intimate-media"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/platform-manipulation"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/election-integrity-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/twitter-impersonation-and-deceptive-identities-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/manipulated-media"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-trademark-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-username-squatting"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/copypasta-duplicate-content"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/financial-scam"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/abusive-profile"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/automated-claims-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/counterfeit-goods-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/public-interest"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-limits"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-reach-limited"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/enforcement-options"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/x-moments-guidelines-and-principles"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/fair-use-policy"
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/copyright-policy",
+          "select": [
+            {
+              "startBefore": "h1",
+              "endBefore": "[class*=\"share-tweet\"]"
+            }
+          ],
+          "remove": [
+            "[class*=\"twtr-type--headline-md\"]"
+          ]
+        },
+        {
+          "fetch": "https://help.x.com/hi/rules-and-policies/enforcement-philosophy"
+        }
+      ],
+      "executeClientScripts": true
+    }
+  }
+}

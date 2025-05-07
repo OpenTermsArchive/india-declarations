@@ -1,0 +1,320 @@
+{
+  "name": "Instagram",
+  "terms": {
+    "Terms of Service": {
+      "fetch": "https://help.instagram.com/581066165581870?locale=hi_IN",
+      "select": [
+        "div[role=\"main\"]"
+      ],
+      "remove": [
+        "div[aria-label=\"Copy Link\"]",
+        "[id='Related Articles']",
+        "fieldset",
+        "img[src*='https://scontent']",
+        "img[src*='static.xx.fbcdn.net']"
+      ],
+      "filter": [
+        "removeLinks"
+      ],
+      "executeClientScripts": true
+    },
+    "Privacy Policy": {
+      "fetch": "https://privacycenter.instagram.com/policy?locale=hi_IN",
+      "select": [
+        ".xg6iff7"
+      ],
+      "filter": [
+        "removeTrackingIDs"
+      ],
+      "executeClientScripts": true
+    },
+    "Community Guidelines": {
+      "combine": [
+        {
+          "fetch": "https://transparency.meta.com/hi-in/policies/community-standards/",
+          "select": [
+            "h1",
+            "[class~=_9nrg]",
+            "[class~=_9nrf]"
+          ],
+          "filter": [
+            "removeTrackingIDsE",
+            "cleanUrls"
+          ],
+          "remove": [
+            "[class~=img]"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/adult-nudity-sexual-activity/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/child-sexual-exploitation-abuse-nudity/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/spam/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/fraud-deception/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/account-integrity/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/authentic-identity-representation/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/inauthentic-behavior/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/dangerous-individuals-organizations/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/sexual-solicitation/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/regulated-goods/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/child-sexual-exploitation-abuse-nudity/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/sexual-exploitation-adults/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/violence-incitement/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/hate-speech/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/bullying-harassment/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/suicide-self-injury/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        },
+        {
+          "fetch": "https://transparency.fb.com/hi-in/policies/community-standards/violent-graphic-content/",
+          "select": [
+            "h1",
+            "[id=policy-details]"
+          ],
+          "remove": [
+            "h3",
+            "h6",
+            "[class~=_9p78]",
+            "[class~=_9q49]",
+            "button"
+          ]
+        }
+      ]
+    },
+    "Law Enforcement Guidelines": {
+      "fetch": "https://help.instagram.com/494561080557017?locale=hi_IN",
+      "select": [
+        "div[role=\"main\"]"
+      ],
+      "remove": [
+        "nav[role=\"navigation\"]",
+        "div[aria-label=\"Copy link\"]",
+        "[id='Related Articles']",
+        "fieldset",
+        "[href*='https://privacycenter.instagram.com/policy/']",
+        "[href*='https://help.instagram.com/519522125107875?helpref=faq_content']"
+      ],
+      "filter": [
+        "removeLinks"
+      ],
+      "executeClientScripts": true
+    },
+    "Trackers Policy": {
+      "fetch": "https://mbasic.facebook.com/privacy/policies/cookies/printable/?locale=hi_IN",
+      "select": [
+        "[id='root']"
+      ],
+      "remove": [
+        "img[src*='https://scontent']",
+        "img[src*='static.xx.fbcdn.net']"
+      ],
+      "filter": [
+        "removeLinks"
+      ]
+    }
+  }
+}

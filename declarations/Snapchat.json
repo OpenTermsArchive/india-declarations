@@ -1,0 +1,34 @@
+{
+  "name": "Snapchat",
+  "terms": {
+    "Terms of Service": {
+      "fetch": "https://www.snap.com/terms?lang=hi-IN",
+      "select": "body",
+      "remove": [
+        "header",
+        "footer",
+        ".cookie-landing-screen"
+      ],
+      "executeClientScripts": true
+    },
+    "Privacy Policy": {
+      "fetch": "https://www.snap.com/privacy/privacy-policy?lang=hi-IN",
+      "select": [
+        "[data-testid=\"page\"]"
+      ],
+      "executeClientScripts": true
+    },
+    "Trackers Policy": {
+      "fetch": "https://www.snap.com/cookie-policy/?lang=hi-IN",
+      "executeClientScripts": true,
+      "select": "[data-testid=\"page\"]"
+    },
+    "Community Guidelines": {
+      "fetch": "https://www.snap.com/community-guidelines?lang=hi-IN",
+      "select": [
+        "[data-testid=\"page\"]"
+      ],
+      "executeClientScripts": true
+    }
+  }
+}

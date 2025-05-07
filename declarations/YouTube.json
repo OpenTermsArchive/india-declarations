@@ -1,0 +1,107 @@
+{
+  "name": "YouTube",
+  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/youtube.com.xml",
+  "terms": {
+    "Privacy Policy": {
+      "fetch": "https://policies.google.com/privacy?hl=hi",
+      "select": "div[role=\"article\"]",
+      "remove": "img[src$='.svg'], img[src^='data:image/svg+xml']"
+    },
+    "Terms of Service": {
+      "fetch": "https://www.youtube.com/t/terms?hl=hi",
+      "select": "div#main-content"
+    },
+    "Copyright Claims Policy": {
+      "fetch": "https://www.youtube.com/intl/en_be/howyoutubeworks/policies/copyright/",
+      "select": ".ytr-article__content"
+    },
+    "Community Guidelines": {
+      "select": [
+        ".article-container"
+      ],
+      "remove": [
+        ".scClientFeedbackInlineFeedbacklinkroot"
+      ],
+      "combine": [
+        {
+          "fetch": "https://www.youtube.com/intl/hi_in/howyoutubeworks/policies/community-guidelines/",
+          "select": [
+            ".ytr-hero__details",
+            ".ytr-article__content-wrapper"
+          ],
+          "remove": [
+            ".ytr-hero__eyebrow",
+            ".ytr-link > svg",
+            ".ytr-media"
+          ]
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/3399767?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801947?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9054257?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801973?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9713446?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801981?hl=hi&ref_topic=9282365"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801999?hl=hi&ref_topic=9282679"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9229980?hl=hi&ref_topic=9282679"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2802002?hl=hi&ref_topic=9282679"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2802245?hl=hi&ref_topic=9282679"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/10072685?hl=hi&ref_topic=9282679"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2802268?hl=hi&ref_topic=9282436"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801964?hl=hi&ref_topic=9282436"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2801939?hl=hi&ref_topic=9282436"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9229472?hl=hi&ref_topic=9282436"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/2802008?hl=hi&ref_topic=9282436"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/7667605?hl=hi"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9229611?hl=hi"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/10834785?hl=hi"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/10835034?hl=hi"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/9891785?hl=hi"
+        },
+        {
+          "fetch": "https://support.google.com/youtube/answer/11161123?hl=hi"
+        }
+      ]
+    }
+  }
+}
