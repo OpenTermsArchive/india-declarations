@@ -1,5 +1,6 @@
 {
   "@opentermsarchive/engine": {
+    "trackingSchedule": "0 */2 * * *",
     "recorder": {
       "versions": {
         "storage": {
