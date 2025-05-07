@@ -1,6 +1,6 @@
 all:
   hosts:
-    <your_server_hostname>:
-      ansible_user: <your_server_username>
-      ed25519_fingerprint: <your_server_ssh_fingerprint>
-      ota_source_repository: <your_repository_url>
+    31.59.184.150:
+      ansible_user: ota
+      ed25519_fingerprint: AAAAC3NzaC1lZDI1NTE5AAAAIDZm5Q0lOJKQAO/Uey8olrkh92vvugmtw/N51yRdlXmK
+      ota_source_repository: https://github.com/OpenTermsArchive/india-declarations.git
