@@ -1,21 +1,17 @@
 id: india
 name: india
-tagline: ''
-description: ''
+tagline: 'Digital services used in India'
+description: 'Digital services used in India'
 dataset: https://github.com/OpenTermsArchive/india-versions/releases
 declarations: https://github.com/OpenTermsArchive/india-declarations
 versions: https://github.com/OpenTermsArchive/india-versions
 snapshots: https://github.com/OpenTermsArchive/india-snapshots
-donations: ''
-logo: ''
 languages: []
 jurisdictions: []
 trackingPeriods:
   - startDate: 2025-05-07
-    schedule: "30 */12 * * *"
-    serverLocation: ''
+    schedule: "0 */2 * * *"
+    serverLocation: Mumbai, IN
 governance:
   OpenTermsArchive:
-    url: ''
-    logo: ''
     roles: [administrator, curator, maintainer]
